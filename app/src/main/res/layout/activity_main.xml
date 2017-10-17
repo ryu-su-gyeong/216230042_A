@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="368dp"
+    android:layout_height="495dp"
+    tools:context="com.example.hywoman.a216230042_2a.MainActivity"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+
+        <TabHost
+            android:layout_width="353dp"
+            android:layout_height="470dp"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="102dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/제작자_소개"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:text="안녕하세요. 한양여자대학교 정보경영과에 다니는 류수경입니다."
+                            android:textSize="25dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/앱_소개"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="368dp"
+                            android:layout_height="wrap_content"
+                            android:text="화면전환"
+                            android:textSize="30dp"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="0dp" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="-10dp"
+            tools:layout_editor_absoluteY="-77dp">
+
+        </TabWidget>
+
+    </android.support.constraint.ConstraintLayout>
+
